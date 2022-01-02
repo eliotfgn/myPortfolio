@@ -11,18 +11,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Eliot's portfolio</title>
     </head>
     <body>
 
         <header>
-            <nav>
+            <nav id="nav-bar">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars "></i>
                 </label>
-                <label class="logo">Eliot</label>
+                <label class="logo"><h1>Eliot</h1> </label>
                 <ul>
                     <li><a class="active" href="">Home</a></li>
                     <li><a href="About Me">About Me</a></li>
@@ -30,7 +39,116 @@
                     <li><a href="contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <section class="introduction">
+                <h1 id="animated-text">Hi I am Eliot</h1>
+            </section>
         </header>
+
+        <section class="about">
+            <div class="title"><h1>Who am I?</h1></div>
+            <img src="images/walling-XLqiL-rz4V8-unsplash.jpg" alt="me" class="me">
+            <p class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem harum eum, nam reiciendis dolorem dolor eveniet aspernatur! Alias, error. Adipisci cum sed, pariatur corporis earum magnam impedit accusantium libero blanditiis.
+            Reprehenderit excepturi quisquam repellat mollitia nulla blanditiis vero laudantium natus explicabo, enim consequuntur corrupti officia nam placeat neque accusamus quo magni modi veniam tempora, numquam rerum eligendi suscipit architecto! Vero.</p>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="title"><h1>My Skills</h1></div>
+            <div class="container">
+                <p>HTML/CSS/Javascript</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="85"><span>85%</span></div>
+                </div>
+
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="85"><span>85%</span></div>
+                </div>
+
+                <p>C/C++</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="50"><span>50%</span></div>
+                </div>
+
+                <p>Java</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="75"><span>75%</span></div>
+                </div>
+
+                <p>Spring Framework and Spring Boot</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="45"><span>45%</span></div>
+                </div>
+
+                <p>Angular Typescript</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="40"><span>40%</span></div>
+                </div>
+
+                <p>Flask(Python)</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="50"><span>50%</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="title"><h1>Contact Me</h1></div>
+            <div class="container"></div>
+        </section>
+
+        <footer>
+            <div class="main-content">
+              <div class="left box">
+                <h2>Social</h2>
+                <div class="content"
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit eius esse dolorem veritatis quas animi ea sed, minus exercitationem ipsam nam ex vel necessitatibus illo quisquam magni cum perspiciatis.</p>
+                  <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://fa-twitter.com/elishady_"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com/hey.liot"><span class="fab fa-instagram"></span></a>
+                    <a href="https://github.com/eliotfgn"><span class="fab fa-github"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Abomey-Calavi, Benin</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+229 61394954</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">efagnon2002@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>For collabs</h2>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </footer>
         
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
